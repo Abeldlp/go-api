@@ -25,7 +25,7 @@ docker-compose.yml              => docker compose file for the database
 
 To run the project locally follow these steps
 
-1. Clone the project `git clone https://github.com/Abeldlp/go-api`
+1. Clone the project `git clone https://github.com/Abeldlp/go-api.git`
 2. Install dependencies `go mod tidy`
 3. Run a docker container with the database `docker-compose up -d`
 4. Run the server `cd cmd && go run main.go`
