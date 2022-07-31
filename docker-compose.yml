@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+    mysql:
+        image: mysql:8
+        restart: 'always'
+        ports:
+            - '3306:3306'
+        environment:
+            - MYSQL_DATABASE=simplerest
+            - MYSQL_USER=abeldlp
+            - MYSQL_PASSWORD=password
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
