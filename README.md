@@ -5,25 +5,25 @@ This project was only to learn how to make a crud api from scratch with the go l
 Structure of the code is as follows
 
 ```
- .
-├──  cmd
-│   ├──  cmd
-│   └──  main.go
-├──  docker-compose.yml
-├──  go.mod
-├──  go.sum
-├──  pkg
-│   ├──  config
-│   │   └──  app.go
-│   ├──  controller
-│   │   └──  book-controller.go
-│   ├──  model
-│   │   └──  book.go
-│   ├──  routes
-│   │   └──  booksstore-routes.go
-│   └──  utils
-│       └──  utils.go
-└──  README.md
+.
+├── cmd
+│   ├── cmd
+│   └── main.go
+├── docker-compose.yml
+├── go.mod
+├── go.sum
+├── pkg
+│   ├── config
+│   │   └── app.go
+│   ├── controller
+│   │   └── book-controller.go
+│   ├── model
+│   │   └── book.go
+│   ├── routes
+│   │   └── booksstore-routes.go
+│   └── utils
+│       └── utils.go
+└── README.md
 
 ```
 
