@@ -1,3 +1,10 @@
+<p align="center">
+  <img
+    src="assets/pngegg.png"
+    height="150px"
+  />
+</p>
+
 ## Go api simple project
 
 This project was only to learn how to make a crud api from scratch with the go language.
