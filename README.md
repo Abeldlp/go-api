@@ -25,7 +25,7 @@ To run the project locally follow these steps
 4. Run the server `cd cmd && go run main.go`
 
 Those steps assume that you have docker / docker-compose installed alongside go
-If you do not, install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/)
+If you do not, install [go](https://go.dev/doc/install), [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/)
 Otherwise feel free to change the config in `config/app.go`
 
 <p align="center">
