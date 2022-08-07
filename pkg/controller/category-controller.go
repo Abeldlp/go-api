@@ -62,6 +62,23 @@ func DeleteCategory(w http.ResponseWriter, r *http.Request) {
 	w.Write(res)
 
 }
+
+func GetBooksByCategoryId(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	categoryId := vars["categoryId"]
+	Id, err := strconv.ParseInt(categoryId, 0, 0)
+
+	if err != nil {
+		fmt.Println("error while parsing id")
+	}
+
+	categoryBooks, _ := model.GetBooksOfCategory(Id)
+	res, _ := json.Marshal(categoryBooks)
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
+	w.Write(res)
+}
+
 func UpdateCategory(w http.ResponseWriter, r *http.Request) {
 	requestCategory := &model.Category{}
 	utils.ParseBody(r, requestCategory)

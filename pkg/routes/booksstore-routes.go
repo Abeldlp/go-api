@@ -19,4 +19,5 @@ var RegisterCategoryRoutes = func(router *mux.Router) {
 	router.HandleFunc("/categories/{categoryId}", controller.GetCategoryById).Methods("GET")
 	router.HandleFunc("/categories/{categoryId}", controller.UpdateCategory).Methods("PUT")
 	router.HandleFunc("/categories/{categoryId}", controller.DeleteCategory).Methods("DELETE")
+	router.HandleFunc("/categories/{categoriesId}/books", controller.GetBooksByCategoryId).Methods("GET")
 }

@@ -22,6 +22,12 @@ func GetCategoryById(Id int64) (*Category, *gorm.DB) {
 	return &category, db
 }
 
+func GetBooksOfCategory(Id int64) (*[]Book, *gorm.DB) {
+	var books []Book
+	db := db.Where("Id=?", Id).Related(&books)
+	return &books, db
+}
+
 func (c *Category) CreateCategory() *Category {
 	db.NewRecord(c)
 	db.Create(&c)
