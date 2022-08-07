@@ -35,3 +35,9 @@ To run the project locally follow these steps
 4. Run the server `cd cmd && go run main.go`
 
 Those steps assume that you have docker / docker-compose installed alongside go
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/footers/gray0_ctp_on_line.svg?sanitize=true"
+  />
+</p>
