@@ -9,6 +9,8 @@ type Book struct {
 	Name        string `json:"name"`
 	Author      string `json:"author"`
 	Publication string `json:"publication"`
+	CategoryId  uint
+	Category    Category
 }
 
 func (b *Book) CreateBook() *Book {
