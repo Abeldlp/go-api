@@ -12,3 +12,11 @@ var RegisterBookStoreRoutes = func(router *mux.Router) {
 	router.HandleFunc("/books/{bookId}", controller.UpdateBook).Methods("PUT")
 	router.HandleFunc("/books/{bookId}", controller.DeleteBook).Methods("DELETE")
 }
+
+var RegisterCategoryRoutes = func(router *mux.Router) {
+	router.HandleFunc("/categories", controller.CreateCategory).Methods("POST")
+	router.HandleFunc("/categories", controller.GetCategories).Methods("GET")
+	router.HandleFunc("/categories/{categoryId}", controller.GetCategoryById).Methods("GET")
+	router.HandleFunc("/categories/{categoryId}", controller.UpdateCategory).Methods("PUT")
+	router.HandleFunc("/categories/{categoryId}", controller.DeleteCategory).Methods("DELETE")
+}
